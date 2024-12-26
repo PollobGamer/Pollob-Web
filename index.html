@@ -1,10 +1,17 @@
 <html>
     <head>
         <title>Pollob Hub</title>
-        <link rel="icon" href="I:\COdes\First web practicing\icon.png" type="image/x-icon">
+        <link rel="icon" href="icon.png" type="image/x-icon">
         <style>
+            @font-face {
+        font-family: 'Minecraft';
+        src: url('minecraft-font.ttf') format('truetype');
+    }
             body {
-                background: linear-gradient(to bottom right, #000000, #2f2f2f);
+                background-image: url('background.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
                 padding-top: 50px; /* Add padding to prevent navbar from covering content */
             }
             .navbar {
@@ -33,16 +40,20 @@
             }
             h1 {
                 text-align: center;
-                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                color: rgb(59, 37, 102);
+                font-family: 'Minecraft', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background: linear-gradient(to top, rgb(109, 4, 38), #d3d3d3);
+        -webkit-background-clip: text;
+        color: transparent;
                 font-size: 60px;
-                text-shadow: 0 0 15px rgb(86, 58, 137);
+                text-shadow: 0 0 15px rgb(51, 51, 51);
             }
             h2 {
                 text-align: center; /* Center the h2 element */
                 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                color: rgb(31, 93, 101);
-                text-shadow: 0 0 15px rgb(31, 93, 101);
+                background: linear-gradient(to top, rgb(128, 1, 255), #d3d3d3);
+        -webkit-background-clip: text;
+        color: transparent;
+                text-shadow: 0 0 15px rgb(0, 0, 0);
                 margin-top: 100px; /* Add margin to create space between h1 and h2 */
             }
             .toggle-btn {
@@ -90,9 +101,10 @@
         <h2>Pollob FPS Modpack</h2>
         <a href="https://www.mediafire.com/folder/zef2yb7md420l/Pollob_fps_boost_mods">
             <img src="fps-boost.jpg" alt="fps-boost" width="40%" class="center">
-        </a>
-        <h2>Symphony z16 Boot.img</h2>
+
+            <h2>Symphony z16 Boot.img</h2>
         <a href="https://www.mediafire.com/folder/fmd4nqg80c7y3/Symphony">
             <img src="images.jpg" alt="github" width="40%" class="center">
+        </a>
     </body>
 </html>
